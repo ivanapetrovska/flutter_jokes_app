@@ -24,6 +24,15 @@ class HomeScreen extends StatelessWidget {
             },
           ),
         ],
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            onPressed: () {
+              Navigator.pushNamed(context, '/favorite-jokes');
+            },
+          ),
+        ],
+
       ),
       body: FutureBuilder<List<String>>(
         future: ApiService.fetchJokeTypes(),

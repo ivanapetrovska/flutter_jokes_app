@@ -33,8 +33,10 @@ class JokeListScreen extends StatelessWidget {
               );
             },
           );
+
         },
       ),
     );
   }
+
 }
